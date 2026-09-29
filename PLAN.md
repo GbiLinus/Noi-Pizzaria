@@ -1,6 +1,6 @@
 # PLAN: Website für NOI Ristorante Pizzeria, Bad Rothenfelde
 
-Stand: 29.09.2026 · Phase: **Vorbereitung für den Bau** (Planung + Datensammlung, noch kein Code)
+Stand: 29.09.2026 · Phase: **Gerüst gebaut** (Schritte 2, 4, 5, 6 als Entwurf erledigt; Schritte 1 und 3 warten auf das NOI)
 
 ## Ziel
 
