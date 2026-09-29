@@ -114,7 +114,7 @@ def build():
         dishes = "\n".join("      " + dish(*i) for i in items)
         sections.append(
             f'  <section id="{sid}" class="menu__sec" aria-labelledby="{sid}-t">\n'
-            f'    <h3 id="{sid}-t" class="menu__title">{escape(title)}</h3>{intro_html}\n'
+            f'    <h3 id="{sid}-t" class="menu__title balken-rein">{escape(title)}</h3>{intro_html}\n'
             f'    <ul class="menu__list">\n{dishes}\n    </ul>{note_html}\n  </section>'
         )
 

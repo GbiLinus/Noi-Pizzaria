@@ -84,7 +84,9 @@ address { font-style: normal; }
   text-decoration: none;
   border-radius: 2px;
 }
+.btn { transition: background-color .15s, transform .15s; }
 .btn:hover { background: var(--ocker-hell); }
+.btn:active { transform: translateY(1px); }
 .btn--klein { padding: 8px 16px 7px; font-size: 17px; }
 
 .link {
@@ -180,7 +182,7 @@ address { font-style: normal; }
 @keyframes strebe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
 @media (prefers-reduced-motion: reduce) { .gefach--strebe svg { animation: none; } }
 
-.gefach--name { display: grid; place-items: center; padding-block: clamp(8px, 2vw, 24px) 0; }
+.gefach--name { display: grid; place-items: center; padding-block: clamp(8px, 2vw, 24px) 0; overflow: hidden; }
 .name {
   font: 400 clamp(150px, 26vw, 320px)/.82 var(--gotisch);
   letter-spacing: .03em;
@@ -197,6 +199,11 @@ address { font-style: normal; }
 .status.is-open::before {
   content: ""; display: inline-block; width: .32em; height: .32em; margin-right: .3em;
   border-radius: 50%; background: currentColor; vertical-align: .18em;
+  animation: lampe 2.4s ease-in-out infinite;
+}
+@keyframes lampe {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 98, 67, .45); }
+  50% { box-shadow: 0 0 0 .22em rgba(74, 98, 67, 0); }
 }
 
 .gefach--tuer {
@@ -205,7 +212,14 @@ address { font-style: normal; }
   color: var(--eiche);
   text-decoration: none;
 }
-.gefach--tuer:hover { background: var(--ocker-hell); }
+.gefach--tuer {
+  transform-origin: left center;
+  transition: transform .45s cubic-bezier(.3, .7, .2, 1), background-color .2s;
+}
+/* Die Tür geht beim Zeigen einen Spalt auf, dahinter der dunkle Balkengrund */
+.gefach--tuer:hover,
+.gefach--tuer:focus-visible { background: var(--ocker-hell); transform: perspective(900px) rotateY(-9deg); }
+.gefach--tuer:active { transform: perspective(900px) rotateY(-14deg); }
 .gefach--tuer:focus-visible { outline: 3px solid var(--kalk); outline-offset: -9px; }
 .tuer__titel { font: 400 clamp(34px, 3.4vw, 44px)/.95 var(--gotisch); }
 .tuer__nummer { font: 700 clamp(22px, 2.2vw, 27px)/1.2 var(--serif); font-variant-numeric: lining-nums; white-space: nowrap; }
@@ -267,6 +281,7 @@ address { font-style: normal; }
 }
 .leiste a {
   flex: none;
+  transition: border-color .2s;
   padding: 12px 0 9px;
   color: var(--kalk);
   font-size: 17px;
@@ -357,3 +372,41 @@ address { font-style: normal; }
 .legal p, .legal address, .legal ul { margin-bottom: 12px; }
 .legal__stand { color: var(--tinte-weich); font-style: italic; }
 .zurueck { display: inline-block; margin-top: 32px; }
+
+/* ---------- Kleine Animationen ----------
+   1. Beim Laden: Buchstaben von NOI senken sich ein, Inschrift erscheint, Streben werden eingesetzt.
+   2. Beim Scrollen: Balken über Abschnitten schieben sich einmal ein (nur mit JavaScript, Klasse .js).
+   3. Tür öffnet sich beim Zeigen, Lampe bei "Jetzt geöffnet" leuchtet. */
+
+.name__b { display: inline-block; animation: buchstabe .7s cubic-bezier(.2, .8, .2, 1) both; }
+.name__b:nth-child(2) { animation-delay: 90ms; }
+.name__b:nth-child(3) { animation-delay: 180ms; }
+@keyframes buchstabe { from { transform: translateY(-105%); } }
+
+.inschrift { animation: inschrift .9s ease-out 450ms both; }
+@keyframes inschrift { from { opacity: 0; letter-spacing: .18em; } }
+
+.menu__title, .besuch__block { position: relative; }
+.menu__title { border-bottom: 0; }
+.menu__title::after,
+.besuch__block::before {
+  content: ""; position: absolute; left: 0; right: 0;
+  background: var(--eiche);
+  transform-origin: left center;
+  transition: transform .8s cubic-bezier(.3, .7, .2, 1);
+}
+.menu__title::after { bottom: 0; height: 4px; }
+.besuch__block { border-top: 0; padding-top: calc(var(--balken) + 18px); }
+.besuch__block::before { top: 0; height: var(--balken); }
+.js .balken-rein::after,
+.js .balken-rein::before { transform: scaleX(0); }
+.js .balken-rein.is-sichtbar::after,
+.js .balken-rein.is-sichtbar::before { transform: none; }
+.besuch__block:nth-child(2)::before { transition-delay: 120ms; }
+.besuch__block:nth-child(3)::before { transition-delay: 240ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .name__b, .inschrift, .status.is-open::before { animation: none; }
+  .gefach--tuer, .gefach--tuer:hover, .gefach--tuer:focus-visible, .gefach--tuer:active { transform: none; }
+  .js .balken-rein::after, .js .balken-rein::before { transform: none; transition: none; }
+}

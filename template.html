@@ -33,6 +33,16 @@
 }
 </script>
 <script type="application/json" id="zeiten">{{HOURS_JSON}}</script>
+<script>
+  // Beim Neuladen immer oben starten (auch wenn die Adresse z. B. #karte enthält).
+  // Links von anderen Seiten wie index.html#karte springen weiter an ihr Ziel.
+  document.documentElement.classList.add("js");
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  (function () {
+    var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+    if (nav && nav.type === "reload" && location.hash) history.replaceState(null, "", location.pathname + location.search);
+  })();
+</script>
 </head>
 <body>
 
@@ -56,7 +66,7 @@
   </div>
 
   <div class="gefach gefach--name">
-    <h1 id="name" class="name">NOI<span class="sr"> – Ristorante Pizzeria in Bad Rothenfelde</span></h1>
+    <h1 id="name" class="name"><span class="name__b">N</span><span class="name__b">O</span><span class="name__b">I</span><span class="sr"> – Ristorante Pizzeria in Bad Rothenfelde</span></h1>
   </div>
 
   <div class="gefach gefach--strebe gefach--k2" aria-hidden="true">
@@ -131,7 +141,7 @@
   <h2 id="besuch-titel" class="titel">Anfahrt und Zeiten</h2>
 
   <div class="besuch__raster">
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Öffnungszeiten</h3>
       <table class="zeiten">
         <tbody>
@@ -140,7 +150,7 @@
       </table>
     </div>
 
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Adresse</h3>
       <address>
         NOI Ristorante Pizzeria<br>
@@ -150,7 +160,7 @@
       <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=NOI+Ristorante+Pizzeria+Birkenstra%C3%9Fe+2+49214+Bad+Rothenfelde" target="_blank" rel="noopener">Route planen</a>
     </div>
 
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Reservieren</h3>
       <p>Am einfachsten telefonisch unter <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>.</p>
       <a class="btn" href="tel:{{PHONE_TEL}}">Anrufen</a>

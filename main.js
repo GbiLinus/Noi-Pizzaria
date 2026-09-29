@@ -4,6 +4,28 @@
 (function () {
   "use strict";
 
+  // Neuladen: oben starten (siehe Skript im <head>)
+  var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+  if (nav && nav.type === "reload") {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    window.addEventListener("load", function () { window.scrollTo({ top: 0, left: 0, behavior: "instant" }); });
+  }
+
+  // Balken über Abschnitten einmal einschieben, sobald sie sichtbar werden
+  var beams = document.querySelectorAll(".balken-rein");
+  if ("IntersectionObserver" in window) {
+    var bio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("is-sichtbar");
+        bio.unobserve(e.target);
+      });
+    }, { rootMargin: "0px 0px -10% 0px" });
+    beams.forEach(function (el) { bio.observe(el); });
+  } else {
+    beams.forEach(function (el) { el.classList.add("is-sichtbar"); });
+  }
+
   var DAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
   var hours = {};
   try { hours = JSON.parse(document.getElementById("zeiten").textContent); } catch (e) { return; }

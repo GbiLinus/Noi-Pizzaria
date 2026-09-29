@@ -46,6 +46,16 @@
 }
 </script>
 <script type="application/json" id="zeiten">{"1": null, "2": ["17:30", "23:00"], "3": ["17:30", "23:00"], "4": ["17:30", "23:00"], "5": ["17:30", "23:00"], "6": ["17:30", "23:00"], "0": "?"}</script>
+<script>
+  // Beim Neuladen immer oben starten (auch wenn die Adresse z. B. #karte enthält).
+  // Links von anderen Seiten wie index.html#karte springen weiter an ihr Ziel.
+  document.documentElement.classList.add("js");
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  (function () {
+    var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+    if (nav && nav.type === "reload" && location.hash) history.replaceState(null, "", location.pathname + location.search);
+  })();
+</script>
 </head>
 <body>
 
@@ -69,7 +79,7 @@
   </div>
 
   <div class="gefach gefach--name">
-    <h1 id="name" class="name">NOI<span class="sr"> – Ristorante Pizzeria in Bad Rothenfelde</span></h1>
+    <h1 id="name" class="name"><span class="name__b">N</span><span class="name__b">O</span><span class="name__b">I</span><span class="sr"> – Ristorante Pizzeria in Bad Rothenfelde</span></h1>
   </div>
 
   <div class="gefach gefach--strebe gefach--k2" aria-hidden="true">
@@ -133,21 +143,21 @@
 
   <div class="menu__body">
   <section id="pizza" class="menu__sec" aria-labelledby="pizza-t">
-    <h3 id="pizza-t" class="menu__title">Pizza</h3>
+    <h3 id="pizza-t" class="menu__title balken-rein">Pizza</h3>
     <ul class="menu__list">
       <li class="dish"><div class="dish__row"><h4 class="dish__name">Pizza Fantasia</h4><span class="dish__price">10,50&nbsp;&euro;</span></div><p class="dish__desc">Paprika, Salami, Mais, Schafskäse, Tomatensoße und Käse</p></li>
     </ul>
   </section>
 
   <section id="antipasti" class="menu__sec" aria-labelledby="antipasti-t">
-    <h3 id="antipasti-t" class="menu__title">Antipasti</h3>
+    <h3 id="antipasti-t" class="menu__title balken-rein">Antipasti</h3>
     <ul class="menu__list">
       <li class="dish"><div class="dish__row"><h4 class="dish__name">Bruschetta</h4><span class="dish__price">5,90&nbsp;&euro;</span></div><p class="dish__desc">mit Dattel-Curry-Paste, 4 Stück</p></li>
     </ul>
   </section>
 
   <section id="fritto-misto" class="menu__sec" aria-labelledby="fritto-misto-t">
-    <h3 id="fritto-misto-t" class="menu__title">Fritto Misto</h3>
+    <h3 id="fritto-misto-t" class="menu__title balken-rein">Fritto Misto</h3>
     <ul class="menu__list">
       <li class="dish"><div class="dish__row"><h4 class="dish__name">Frittierte Calamari</h4><span class="dish__price">16,50&nbsp;&euro;</span></div><p class="dish__desc">mit Scampi und selbstgemachten Pommes</p></li>
       <li class="dish"><div class="dish__row"><h4 class="dish__name">Risotto di Mare</h4><span class="dish__price">12,50&nbsp;&euro;</span></div><p class="dish__desc">Risotto mit Meeresfrüchten</p></li>
@@ -169,7 +179,7 @@
   <h2 id="besuch-titel" class="titel">Anfahrt und Zeiten</h2>
 
   <div class="besuch__raster">
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Öffnungszeiten</h3>
       <table class="zeiten">
         <tbody>
@@ -184,7 +194,7 @@
       </table>
     </div>
 
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Adresse</h3>
       <address>
         NOI Ristorante Pizzeria<br>
@@ -194,7 +204,7 @@
       <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=NOI+Ristorante+Pizzeria+Birkenstra%C3%9Fe+2+49214+Bad+Rothenfelde" target="_blank" rel="noopener">Route planen</a>
     </div>
 
-    <div class="besuch__block">
+    <div class="besuch__block balken-rein">
       <h3>Reservieren</h3>
       <p>Am einfachsten telefonisch unter <a href="tel:+4954243639168">05424&nbsp;3639168</a>.</p>
       <a class="btn" href="tel:+4954243639168">Anrufen</a>

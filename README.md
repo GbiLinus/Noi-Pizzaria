@@ -41,13 +41,19 @@ Die Seite ist ein Fachwerkhaus. Der Kopf der Seite ist eine Fassade: Eichenbalke
 
 Schriften: **League Gothic** (schmale Grotesk alter Kinoplakate, passend zur Deko mit Film- und Musikstars) für Titel, **Alegreya** (Buchserife) für Karte und Text. Bewusst anders als Collo (Creme, Tomatenrot, Bodoni).
 
-Einzige Animation: Beim Laden werden die Streben der Fassade eingesetzt. Bei „Bewegung reduzieren“ entfällt sie.
+Kleine Animationen (alle aus bei „Bewegung reduzieren“):
+- Beim Laden senken sich die Buchstaben von NOI ein, die Inschrift erscheint, die Streben werden eingesetzt.
+- Beim Scrollen schieben sich die Balken über Speisekarten-Kategorien und Besuchs-Blöcken einmal ein.
+- Die Tür (Anrufen) geht beim Zeigen einen Spalt auf. Bei „Jetzt geöffnet“ leuchtet eine Lampe.
+
+Beim Neuladen startet die Seite immer oben, auch wenn die Adresse z. B. `#karte` enthält. Links von Impressum/Datenschutz auf `index.html#karte` springen weiter an ihr Ziel.
 
 ## Geprüft (29.09.2026)
 
 - Kein seitliches Scrollen bei 1366, 375 und 320 px Breite.
 - Keine Anfragen an fremde Server beim Laden.
 - `python3 build.py` ohne übrige Platzhalter.
+- Neuladen nach Scrollen und mit `#besuch` in der Adresse: Seite steht oben.
 
 ## Quellen
 
