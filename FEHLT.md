@@ -4,7 +4,7 @@ Stand: 29.09.2026. Aufbau wie `FEHLT.md` im Projekt Collo. Alles, was nicht sich
 
 ## Fehlt ganz
 
-1. **Speisekarte** komplett (Foto oder Datei reicht): Kategorien, Nummern, Namen, Beschreibungen, Preise. Online gibt es nur 8 Gerichte von 2021 und 2024 (`daten/speisekarte-fragmente.json`).
+1. **Speisekarte** komplett (Foto oder Datei reicht): Kategorien, Nummern, Namen, Beschreibungen, Preise. Online gibt es nur 8 Gerichte von 2021 und 2024 (`daten/speisekarte-fragmente.json`). Weitere Kartenseiten (Lieferando `pizza-noi-10785`, foodpearl, Restaurant Guru, Sluurpy, speisekarte.menu) sperren automatische Abrufe (Stand 29.09.2026). Ob der Lieferando-Eintrag überhaupt dieses NOI ist, ist offen.
 2. **Monatskarte:** Wie oft wechselt sie? Wer schickt die neue, und wie (WhatsApp, E-Mail)?
 3. **Getränkekarte** (Wein, Prosecco, Aperitivo, Bier, Softdrinks, Preise).
 4. **Allergene und Zusatzstoffe** (Pflicht, muss mindestens im Restaurant verfügbar sein).
@@ -17,7 +17,7 @@ Stand: 29.09.2026. Aufbau wie `FEHLT.md` im Projekt Collo. Alles, was nicht sich
 
 ## Widersprüchlich oder nicht bestätigt (deshalb weggelassen)
 
-11. **Sonntag:** drei Varianten in den Portalen: 17:00–22:00 (mymenuweb), 17:30–23:00 (Tripadvisor, placejoys), geschlossen (speisekartenweb, Stand 2021).
+11. **Sonntag:** vier Varianten in den Portalen: 17:00–22:00 (mymenuweb), 17:30–22:00 (restaurantnet.de), 17:30–23:00 (Tripadvisor, placejoys), geschlossen (speisekartenweb, Stand 2021).
 12. **Dienstag bis Samstag 17:30–23:00, Montag Ruhetag:** in allen Quellen gleich, trotzdem bestätigen. Küchenschluss? Betriebsferien, Feiertage?
 13. **Lieferung:** speisekartenweb nennt eine externe Lieferplattform, mymenuweb einen Kurzlink `tidd.ly/49uAn2K`. Unklar, ob aktuell.
 14. **Holzofen:** nur in einer automatisch erzeugten Zusammenfassung erwähnt. Nicht schreiben, bis bestätigt.
