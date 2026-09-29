@@ -1,0 +1,291 @@
+{
+  "_hinweis": "Gesammelt am 2026-09-29 aus öffentlichen Webquellen. Status: bestaetigt = mehrere Quellen gleich; unsicher = Quellen widersprechen sich oder nur eine Quelle; fehlt = nicht gefunden. Alles muss vor dem Livegang von den Inhabern bestätigt werden.",
+  "name": {
+    "wert": "NOI Ristorante Pizzeria",
+    "kurz": "NOI",
+    "status": "bestaetigt",
+    "quellen": [
+      "tripadvisor",
+      "speisekartenweb",
+      "mymenuweb",
+      "placejoys"
+    ]
+  },
+  "slogan_social": {
+    "wert": "Make it Noi",
+    "status": "unsicher",
+    "hinweis": "Abgeleitet aus Social-Media-Namen @makeitnoi / facebook.com/MakeitNoi. Mit Inhabern klären, ob als Slogan gewünscht.",
+    "quellen": [
+      "instagram",
+      "facebook"
+    ]
+  },
+  "inhaber": {
+    "wert": [
+      "Kevin Gribat",
+      "Mara Calzona"
+    ],
+    "status": "unsicher",
+    "hinweis": "Nur aus Webquellen. Für Impressum: Rechtsform, Vertretungsberechtigte und genaue Schreibweise bestätigen lassen.",
+    "quellen": [
+      "tripadvisor"
+    ]
+  },
+  "adresse": {
+    "strasse": "Birkenstraße 2",
+    "plz": "49214",
+    "ort": "Bad Rothenfelde",
+    "land": "DE",
+    "status": "bestaetigt",
+    "quellen": [
+      "tripadvisor",
+      "speisekartenweb",
+      "mymenuweb",
+      "placejoys",
+      "online-tischreservierung"
+    ]
+  },
+  "telefon": {
+    "wert": "+49 5424 3639168",
+    "anzeige": "05424 3639168",
+    "status": "bestaetigt",
+    "quellen": [
+      "speisekartenweb",
+      "mymenuweb",
+      "placejoys",
+      "online-tischreservierung"
+    ]
+  },
+  "email": {
+    "wert": null,
+    "status": "fehlt"
+  },
+  "website": {
+    "wert": null,
+    "status": "fehlt",
+    "hinweis": "Keine eigene Website gefunden. online-tischreservierung.de verlinkt auf eine fremde Adresse (mapsops.top), nicht übernehmen."
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/makeitnoi/",
+    "facebook": "https://www.facebook.com/MakeitNoi/",
+    "status": "bestaetigt"
+  },
+  "oeffnungszeiten": {
+    "wert": {
+      "mo": null,
+      "di": [
+        "17:30",
+        "23:00"
+      ],
+      "mi": [
+        "17:30",
+        "23:00"
+      ],
+      "do": [
+        "17:30",
+        "23:00"
+      ],
+      "fr": [
+        "17:30",
+        "23:00"
+      ],
+      "sa": [
+        "17:30",
+        "23:00"
+      ],
+      "so": "unklar"
+    },
+    "status": "unsicher",
+    "hinweis": "Montag Ruhetag laut allen Quellen. Sonntag widersprüchlich, siehe widersprueche.",
+    "quellen": [
+      "tripadvisor",
+      "mymenuweb",
+      "placejoys",
+      "speisekartenweb"
+    ]
+  },
+  "kueche": {
+    "wert": [
+      "Italienisch",
+      "Pizza",
+      "Pasta"
+    ],
+    "status": "bestaetigt"
+  },
+  "preisniveau": {
+    "wert": "10–20 € pro Person",
+    "status": "unsicher",
+    "quellen": [
+      "placejoys"
+    ]
+  },
+  "ambiente": {
+    "wert": "Familiengeführt, altes Fachwerkhaus, italienische Deko mit Bildern von Schauspielern und Musikern, gemütlich",
+    "status": "unsicher",
+    "hinweis": "Aus Bewertungstexten. Eigene Fotos und Beschreibung der Inhaber einholen.",
+    "quellen": [
+      "tripadvisor",
+      "placejoys"
+    ]
+  },
+  "ausstattung": {
+    "wert": {
+      "aussenbereich": true,
+      "vor_ort_essen": true,
+      "abholung": true,
+      "lieferung": "unklar",
+      "reservierung": "telefonisch",
+      "rollstuhlgerecht_eingang": true,
+      "rollstuhlgerecht_sitzplaetze": true,
+      "hochstuehle": true,
+      "kamin": true,
+      "bar": true,
+      "parken_kostenlos": "Parkplatz und Straße",
+      "zahlung": [
+        "Kreditkarte",
+        "Debitkarte",
+        "NFC/mobil"
+      ],
+      "holzofen": "unklar"
+    },
+    "status": "unsicher",
+    "hinweis": "Überwiegend aus einer Quelle (placejoys, vermutlich aus Google-Profil). Lieferung: speisekartenweb nennt externe Lieferplattform, mymenuweb einen Kurzlink (tidd.ly/49uAn2K). Holzofen nur in einer KI-generierten Zusammenfassung erwähnt, nicht belegt.",
+    "quellen": [
+      "placejoys",
+      "speisekartenweb",
+      "mymenuweb"
+    ]
+  },
+  "bewertungen": {
+    "_hinweis": "Nur als Momentaufnahme. Auf der Website keine Zahlen hart eintragen, die veralten. Zitate nur mit Erlaubnis bzw. aus eigenen Gästestimmen.",
+    "google": {
+      "schnitt": 4.8,
+      "status": "unsicher",
+      "quelle": "tripadvisor-zusammenfassung"
+    },
+    "tripadvisor": {
+      "schnitt": 4.4,
+      "rang": "Platz 3 von 22 in Bad Rothenfelde",
+      "status": "unsicher"
+    },
+    "restaurant_guru": {
+      "schnitt": 4.7,
+      "anzahl": 490,
+      "status": "unsicher"
+    },
+    "placejoys": {
+      "schnitt": 4.7,
+      "anzahl": 463,
+      "status": "unsicher"
+    },
+    "instagram_follower": {
+      "wert": 1918,
+      "status": "unsicher"
+    },
+    "lob_themen": [
+      "Pizza wie in Italien",
+      "große Portionen",
+      "freundlicher, aufmerksamer Service",
+      "frisch und lecker",
+      "faire Preise",
+      "familiäre, gemütliche Atmosphäre",
+      "Tiramisu, Lasagne, Pasta"
+    ]
+  },
+  "widersprueche": [
+    {
+      "feld": "oeffnungszeiten.so",
+      "varianten": [
+        {
+          "wert": "17:00–22:00",
+          "quellen": [
+            "mymenuweb",
+            "speisekarte.de-Suche"
+          ]
+        },
+        {
+          "wert": "17:30–23:00",
+          "quellen": [
+            "tripadvisor",
+            "placejoys"
+          ]
+        },
+        {
+          "wert": "geschlossen",
+          "quellen": [
+            "speisekartenweb (Stand 2021)"
+          ]
+        }
+      ]
+    },
+    {
+      "feld": "adresse.strasse",
+      "varianten": [
+        {
+          "wert": "Birkenstraße 2",
+          "quellen": [
+            "fast alle"
+          ]
+        },
+        {
+          "wert": "Birkenstraße 2 2",
+          "quellen": [
+            "online-tischreservierung (Tippfehler)"
+          ]
+        }
+      ]
+    },
+    {
+      "feld": "portal_typ",
+      "varianten": [
+        {
+          "wert": "International Restaurant",
+          "quellen": [
+            "speisekarte.de"
+          ]
+        },
+        {
+          "wert": "Italienisch / Pizza",
+          "quellen": [
+            "alle anderen"
+          ]
+        }
+      ]
+    }
+  ],
+  "wettbewerb_vor_ort": {
+    "_hinweis": "Italienische/mediterrane Restaurants in Bad Rothenfelde laut online-tischreservierung.de (Bewertung dort)",
+    "liste": [
+      {
+        "name": "Collo Restaurant + Bar",
+        "bewertung": 4.6,
+        "website": "https://sites.google.com/view/collorestaurantbar/startseite",
+        "notiz": "Vorbild, spanisch-italienisch, Osnabrücker Straße 6, Di Ruhetag, resmio-Reservierung. Eigener Website-Entwurf im Projekt Collo = Vorlage für NOI",
+        "entwurf_repo": "https://github.com/GbiLinus/Collo"
+      },
+      {
+        "name": "Sole Mia",
+        "bewertung": 4.6
+      },
+      {
+        "name": "Al Caminetto",
+        "bewertung": 4.2
+      },
+      {
+        "name": "Fattoria",
+        "bewertung": 3.7
+      }
+    ]
+  },
+  "quellen": {
+    "tripadvisor": "https://www.tripadvisor.com/Restaurant_Review-g198417-d18782747-Reviews-Noi-Bad_Rothenfelde_Lower_Saxony.html",
+    "speisekartenweb": "https://speisekartenweb.de/restaurants/rothenfelde/noi-ristorante-pizzeria-49410",
+    "speisekarte.de": "https://www.speisekarte.de/bad-rothenfelde/restaurant/noi/speisekarte",
+    "mymenuweb": "https://mymenuweb.com/de/restaurants/1811018/",
+    "placejoys": "https://noi-ristorante-pizzeria.placejoys.com/",
+    "online-tischreservierung": "https://www.online-tischreservierung.de/restaurant/index/Niedersachsen/Bad+Rothenfelde/Pizza/w22pcw7ezw/NOI+Ristorante+Pizzeria/",
+    "restaurant_guru": "https://restaurantguru.com/NOI-Bad-Rothenfelde",
+    "instagram": "https://www.instagram.com/makeitnoi/",
+    "facebook": "https://www.facebook.com/MakeitNoi/"
+  }
+}

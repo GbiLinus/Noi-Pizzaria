@@ -1,0 +1,42 @@
+{
+  "_hinweis": "Nur öffentlich auffindbare Einzelgerichte. Keine vollständige Karte. Preise können veraltet sein. Vor dem Bau die aktuelle Karte (inkl. Allergene und Zusatzstoffe) vom NOI einholen.",
+  "gerichte": [
+    { "kategorie": "Monatskarte", "name": "Pizza Fantasia", "beschreibung": "Paprika, Salami, Mais, Schafskäse, Tomatensoße & Käse", "preis": 10.50, "quelle": "speisekartenweb", "stand": "2021-11-05" },
+    { "kategorie": "Fritto Misto", "name": "Frittierte Calamari", "beschreibung": "mit Scampis & selbstgemachten Pommes", "preis": 16.50, "quelle": "speisekartenweb", "stand": "2021-11-05" },
+    { "kategorie": "Fritto Misto", "name": "Risotto di Mare", "beschreibung": "Risotto mit Meeresfrüchten", "preis": 12.50, "quelle": "speisekartenweb", "stand": "2021-11-05" },
+    { "kategorie": "Fritto Misto", "name": "Bruschetta", "beschreibung": "mit Dattel-Curry-Paste, 4 Stück", "preis": 5.90, "quelle": "speisekartenweb", "stand": "2021-11-05" },
+    { "kategorie": "Monatskarte", "name": "Bruschetta ai carciofi", "beschreibung": "Gorgonzola, Sardellen, Artischocken & Mozzarella", "preis": 7.50, "quelle": "speisekarte.de", "stand": "2024-03-28", "hinweis": "Quelle schreibt 'caiciafi', vermutlich Tippfehler für 'carciofi' (Artischocken). Schreibweise auf der Karte prüfen." },
+    { "kategorie": "Monatskarte", "name": "Panino grande Arrabbiato", "beschreibung": "Nduja, Burrata, Rucola & karamellisierte Zwiebeln", "preis": 15.50, "quelle": "speisekarte.de", "stand": "2024-03-28" },
+    { "kategorie": "Monatskarte", "name": "Panino grande Royal", "beschreibung": "Salat, Pute, Zwiebeln, Schafskäse & Knoblauchsoße", "preis": 15.50, "quelle": "speisekarte.de", "stand": "2024-03-28" },
+    { "kategorie": "Monatskarte", "name": "Panino grande al Salmone", "beschreibung": "Rucola, Lachs, Burrata & frische Zwiebeln", "preis": 15.50, "quelle": "speisekarte.de", "stand": "2024-03-28" }
+  ],
+  "in_bewertungen_genannt": ["Pizza", "Lasagne", "Pasta", "Tiramisu", "Prosecco"],
+  "vorschlag_kategorien": [
+    "Monatskarte",
+    "Antipasti & Bruschetta",
+    "Insalate",
+    "Pizza",
+    "Pasta",
+    "Panini grandi",
+    "Fritto Misto & Fisch",
+    "Dolci",
+    "Getränke"
+  ],
+  "schema_fuer_speisekarte_json": {
+    "_hinweis": "Zielformat für daten/speisekarte.json, sobald die echte Karte vorliegt",
+    "beispiel": {
+      "nr": "12",
+      "kategorie": "Pizza",
+      "name": "Pizza Margherita",
+      "beschreibung": "Tomatensoße, Mozzarella, Basilikum",
+      "preis": 0.00,
+      "groessen": null,
+      "vegetarisch": true,
+      "vegan": false,
+      "scharf": false,
+      "allergene": ["A", "G"],
+      "zusatzstoffe": [],
+      "neu": false
+    }
+  }
+}
